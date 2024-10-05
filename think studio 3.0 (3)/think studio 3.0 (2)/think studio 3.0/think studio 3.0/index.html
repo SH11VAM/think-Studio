@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thing Studio</title>
+
+
+  <!-- cursor -->
+  <!-- <link rel="preload" as="video" href="./assets/images/Home_page.mp4"> -->
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
+<link rel="manifest" href="favicon\site.webmanifest">
+<link rel="mask-icon" href="favicon\safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/responsive_style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="top">
+
+
+<!-- cursor property -->
+<div class="cursor">
+  <div class="cursor__ball cursor__ball--big">
+    <svg height="30" width="30">
+      <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+    </svg>
+  </div>
+  <div class="cursor__ball cursor__ball--small">
+    <svg height="10" width="10">
+      <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+    </svg>
+  </div>
+</div>
+
+
+
+  <!-- 
+    - #HEADER
+  --><div id="header">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="logo-container">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Logo">
+        </a>
+        <!-- <img src="./assets/images/logo2.png" alt="Hover Image" class="hover-image"> -->
+      </div>
+      
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">Thing Studio</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
+          </li> -->
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+      
+      <a href="#contact-form-section" id="contact-button" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+</div>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">
+              <div class="text-container" id="text-container">
+                <div class="loading loading06">
+                  <span data-text="E">E</span>
+                  <span data-text="M">M</span>
+                  <span data-text="P">P</span>
+                  <span data-text="O">O</span>
+                  <span data-text="W">W</span>
+                  <span data-text="E">E</span>
+                  <span data-text="R">R</span>
+                  <span data-text="I">I</span>
+                  <span data-text="N">N</span>
+                  <span data-text="G">G</span>
+                  <span data-text=" "> &nbsp;</span> <!-- Space between words -->
+                  <span data-text="G" class="change">G</span>
+                  <span data-text="R" class="change">R</span>
+                  <span data-text="O" class="change">O</span>
+                  <span data-text="W" class="change">W</span>
+                  <span data-text="T" class="change">T</span>
+                  <span data-text="H" class="change">H</span>
+                  <span data-text="" class="change"></span>
+                  <span data-text="" class="change"></span>
+                  
+
+                  
+                </div>
+                
+              </div>
+              <span class="word-animation">with</span> 
+              <span class="word-animation">Bold</span> 
+              <span class="word-animation">Ideas</span> 
+              <span class="word-animation">and</span> 
+              <span class="word-animation">Creative</span> 
+              <span class="word-animation">Solutions</span>
+              
+            </h1>
+
+            <p class="hero-text">
+              Think Studios is a full-service digital creative agency that helps busy entrepreneurs scale their businesses by providing a dedicated team of creative and strategic professionals.
+              <span class="more-text" style="display: none;">
+                  We blend innovation, design, and technology to craft digital experiences that are both impactful and visually stunning. Our journey began with a passion for turning ideas into reality, pushing beyond the ordinary to deliver extraordinary results. From design and digital strategy to development, we partner with you to create experiences that resonate with your audience and align with your business goals. Let’s think big, innovate boldly, and grow your business together.
+              </span>
+              <a href="javascript:void(0);" class="read-more" onclick="toggleText()">Read More</a>
+          </p>
+          
+
+          <div class="wrapper">
+            <button class="hero-btn" aria-label="Thing promo" id="show-image-btn">
+                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+                <span class="span">Behind the scenes</span>
+            </button>
+        
+            <!-- Image container -->
+            <div class="image-overlay" id="image-overlay">
+                <img src="./assets/images/Orange and Black Bold Creative Animated Welcome Channel Youtube Intro Video.gif" alt="Behind the scenes" class="overlay-image">
+                <button class="close-btn" id="close-btn">Close</button>
+            </div>
+        </div>
+        
+
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61566745828657" class="social-link" style="--color: hsl(241, 77%, 63%);" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-facebook"></ion-icon>
+
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/@thinkstudios4?si=wdiaSvWJye9wIxwA" class="social-link" style="--color: hsl(0, 100%, 50%);"  target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-youtube"></ion-icon>
+
+                  <span class="span">Youtube</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/thinkstudios4/" class="social-link" style="--color: hsl(324, 86%, 52%);" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-instagram"></ion-icon>
+
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/company/think-studios-and-technologies-pvt-ltd/posts/?feedView=all" class="social-link" style="--color: hsl(206, 93%, 48%);" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-Linkedin"></ion-icon>
+
+                  <span class="span">Linkedin</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.pinterest.com/thinkstudios4/" class="social-link" style="--color: hsl(0, 87%, 32%);" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-Pinterest"></ion-icon>
+
+                  <span class="span">Pinterest</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <video src="./assets/images/Home_page.mp4" width="535" height="500" alt="hero banner" autoplay loop muted playsinline ></video>
+
+            <!-- <img src="./assets/images/hero-banner.png" width="794" height="637" alt="hero banner" class="w-100"> -->
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+      
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Our Services</p>
+
+          <h2 class="h2 section-title text-center">Managing your business with our <span class="has-before">best
+              service</span></h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card" style="--color: 174, 77%, 50%">
+
+                <div class="card-icon">
+                  <img src="assets\images\content development icon-01.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Content Development</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 267, 76%, 57%">
+
+                <div class="card-icon">
+                  <img src="assets\images\creative developments icon-02.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Creative Development</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 17, 100%, 68%">
+
+                <div class="card-icon">
+                  <img src="assets\images\social media management icon-03.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Social Media Management </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 343, 98%, 60%">
+
+                <div class="card-icon">
+                  <img src="assets\images\digital marketing ,-04.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Digital Marketing </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 210, 100%, 53%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/website development-05.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Website Development</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 157, 89%, 44%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/virtual assistant-06.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Virtual Assistant</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 197, 71%, 73%;
+">
+
+                <div class="card-icon">
+                  <img src="./assets/images/content-creator.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Content creater</a>
+                </h3>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" id="feature" aria-label="feature">
+        <div class="container">
+          <figure class="feature-banner">
+            <img src="./assets/images/feature page img1.png" width="582" height="585" loading="lazy" alt="feature banner" class="w-100">
+            <!-- <img src="./assets/images/Orange and Black Bold Creative Animated Welcome Channel Youtube Intro Video.gif" width="582" height="585" loading="lazy" alt="feature banner" class="w-100"> -->
+          </figure>
+      
+          <div class="feature-content">
+            <p class="section-subtitle has-before">Why Choose Us</p>
+            <h2 class="h2 section-title">
+              Skilled Professionals, Exceptional Outcomes <span class="has-before"></span>
+            </h2>
+      
+            <ul class="feature-list">
+              <!-- First three feature cards -->
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon" style="--color: 174, 77%, 50%;">
+                    <ion-icon name="construct-outline" aria-hidden="true"></ion-icon> <!-- Highly Skilled Professionals -->
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">Highly Skilled Professionals</h3>
+                    <p class="card-text">
+                      Our team excels in their craft with top-level expertise.
+                    </p>
+                  </div>
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="flame-outline" aria-hidden="true"></ion-icon> <!-- Passion for Success -->
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">Passion for Success</h3>
+                    <p class="card-text">
+                      Driven by a genuine passion to succeed and deliver outstanding results.
+                    </p>
+                  </div>
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <ion-icon name="medal-outline" aria-hidden="true"></ion-icon> <!-- Pride in Work -->
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">Pride in Work</h3>
+                    <p class="card-text">
+                      Team members take pride in consistently delivering exceptional outcomes.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+      
+            <!-- Additional feature cards hidden initially -->
+            <ul class="feature-list hidden" id="more-features">
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon" style="--color: 174, 77%, 50%;">
+                    <ion-icon name="sync-outline" aria-hidden="true"></ion-icon> <!-- Continuous Improvement -->
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">Continuous Improvement</h3>
+                    <p class="card-text">
+                      Always seeking opportunities to refine their skills and enhance performance.
+                    </p>
+                  </div>
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon> <!-- Exceeding Expectations -->
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">Exceeding Expectations</h3>
+                    <p class="card-text">
+                      Not just meeting, but consistently exceeding expectations.
+                    </p>
+                  </div>
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <ion-icon name="people-outline" aria-hidden="true"></ion-icon> <!-- Collaborative Approach -->
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">Collaborative Approach</h3>
+                    <p class="card-text">
+                      Our team thrives on collaboration and teamwork to achieve common goals.
+                    </p>
+                  </div>
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon" style="--color: 48, 98%, 60%;">
+                    <ion-icon name="chatbubble-outline" aria-hidden="true"></ion-icon> <!-- Communication and Problem-Solving Skills -->
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">Strong Communication and Problem-Solving Skills</h3>
+                    <p class="card-text">
+                      Experts in clear communication and effective problem-solving.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+      
+            <!-- Read More Button -->
+            <button class="read-more-btn"  onclick="showMore()">Read More</button>
+          </div>
+        </div>
+      </section>
+      
+
+
+<!-- blogslist -->
+
+
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+      
+          <p class="section-subtitle text-center has-before">Blog Post</p>
+      
+          <h2 class="h2 section-title text-center">
+            Popular <span class="has-before">blog post</span>
+          </h2>
+      
+          <ul class="blog-list" id="blogList">
+      
+            <!-- Blog Post 1 -->
+            <li>
+              <div class="blog-card large">
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-1.jpg" width="644" height="363" loading="lazy" alt="Godaddy user flow solution..." class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <div class="wrapper">
+                    <a href="./blogs/blog4.html" class="tag">Branding</a>
+                    <a href="./blogs/blog4.html" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">Jan 22, 2020</span>
+                    </a>
+                  </div>
+                  <h3>
+                    <a href="./blogs/blog4.html" class="card-title" onclick="showBlogDetails(event, 'Godaddy user flow solution...', 'July 22, 2022', 'This is placeholder content for the Godaddy user flow solution blog. You can edit this text later with specific content.', './assets/images/blog-1.jpg')">Why Personal Branding is the Secret Sauce for Small Business Success</a>
+                  </h3>
+                  <p class="card-text">
+                    In today’s saturated market, small businesses and freelancers often struggle to stand out. The answer lies in personal branding, showcasing your unique personality, skills, and values to create a lasting impression.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Blog Post 2 -->
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner">
+                  <img src="assets\images\Web Design Tips to Boost Your Online Presence blog22.jpg" loading="lazy" alt="Web Design Tips" class=" blog22" >
+                </figure>
+                <div class="card-content">
+                  <div class="wrapper">
+                    <a href="./blogs/blog1.html" class="tag">Design</a>
+                    <a href="./blogs/blog1.html" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">August 10, 2020</span>
+                    </a>
+                  </div>
+                  <h3>
+                    <a href="./blogs/blog1.html" class="card-title" onclick="showBlogDetails(event, '5 Web Design Tips to Boost Your Online Presence', 'August 10, 2022', 'Here is placeholder content for the blog post on web design tips. You can add more information later about the tips.', './assets/images/blog-2.jpg')">Web Design Tips to Boost Your Online Presence</a>
+                  </h3>
+                  <p class="card-text">
+                    In today's digital age, your website is often the first impression potential customers have of your business.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Blog Post 3 -->
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Proven Social Media Strategies to Increase Engagement and Sales blog .jpg" loading="lazy" alt="Web Design Tips" class=" blog22" >
+                </figure>
+                </figure>
+                <div class="card-content">
+                  <div class="wrapper">
+                    <a href="./blogs/blog3.html" class="tag">Marketing</a>
+                    <a href="./blogs/blog3.html" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">September 5, 2020</span>
+                    </a>
+                  </div>
+                  <h3>
+                    <a href="./blogs/blog3.html" class="card-title" onclick="showBlogDetails(event, 'Proven Social Media Strategies to Increase Engagement and Sales', 'September 5, 2022', 'This placeholder text covers various social media strategies to boost engagement. Feel free to update it later.', './assets/images/blog-3.png')">Proven Social Media Strategies to Increase Engagement and Sales</a>
+                  </h3>
+                  <p class="card-text">
+                    In today’s digital landscape, social media is a powerful tool for businesses looking to increase engagement and drive sales.
+                  </p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Blog Post 4 -->
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Why a Strong Brand Identity is Crucial for Startup Success blog.jpg" loading="lazy" alt="Web Design Tips" class=" blog22" >
+                </figure>
+                <div class="card-content">
+                  <div class="wrapper">
+                    <a href="./blogs/blog2.html" class="tag">Design</a>
+                    <a href="./blogs/blog2.html" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">July 21, 2020</span>
+                    </a>
+                  </div>
+                  <h3>
+                    <a href="./blogs/blog2.html" class="card-title" onclick="showBlogDetails(event, 'How to Gain Pro Experience with Figma Update', 'July 21, 2020', 'This placeholder content focuses on gaining professional experience with Figma. Add more specific details later.', './assets/images/blog-4.png')">Why a Strong Brand Identity is Crucial for Startup Success
+                    </a>
+                  </h3>
+                  <p class="card-text">
+                    In the competitive world of startups, having a strong brand identity is not just an option—it's a necessity.
+                  </p>
+                </div>
+              </div>
+             
+              
+            </li>
+      
+          </ul>
+          <div class="visit-blogs">
+            <a href="./blogs/blogslist.html" class="visit-blogs-link">Explore Our Blogs</a>
+          </div>
+          
+      
+          
+      
+        </div>
+      </section>
+      
+    
+      
+
+    </article>
+  </main>
+
+
+
+<!-- 
+        - #CONTACT
+      -->
+
+     <!-- Contact Section -->
+<section class="contact-section" id="contact-form-section" aria-label="contact">
+  <div class="contact-container">
+
+    <h2 class="contact-heading">Get In Touch With Us</h2>
+
+    <p class="contact-description">
+      Connect with us for innovative solutions and expert guidance.
+    </p>
+
+    <form action="" class="contact-form-custom" method="post" action="" name="contact-form">
+
+      <div class="form-group">
+        <input type="text" name="name" aria-label="name" placeholder="Your name*" autocomplete="name" required class="form-input">
+
+        <input type="email" name="email_address" aria-label="email" placeholder="Email address*" autocomplete="email" required
+          class="form-input">
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="form-input" >
+
+        <input type="number" name="phone" aria-label="phone" placeholder="Phone number" class="form-input" autocomplete="tel">
+      </div>
+      <textarea name="message" aria-label="message" placeholder="Your message...*" required
+        class="form-textarea"></textarea>
+
+      <button type="submit" class="contact-submit-btn">Send Message</button>
+
+    </form>
+
+    <ul class="contact-info-list">
+
+      <li class="contact-info-item">
+        <div class="info-card">
+
+          <div class="card-icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="card-details">
+
+            <h3 class="card-title">Mail Us At</h3>
+
+            <a href="mailto:hello@luaz.com" class="card-detail-link">hello@luaz.com</a>
+            <a href="mailto:info@luaz.com" class="card-detail-link">info@luaz.com</a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li class="contact-info-item">
+        <div class="info-card">
+
+          <div class="card-icon">
+            <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="card-details">
+
+            <h3 class="card-title">Visit Us At</h3>
+
+            <address class="card-detail-address">
+              27 Division St, New York,<br>NY 10002, USA
+            </address>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li class="contact-info-item">
+        <div class="info-card">
+
+          <div class="card-icon">
+            <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="card-details">
+
+            <h3 class="card-title">Call Us At</h3>
+
+            <a href="tel:+1234567890" class="card-detail-link">+123 456 7890</a>
+            <a href="tel:+2414524526" class="card-detail-link">+241 452 4526</a>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+  <div id="footer">
+    <footer class="footer">
+      <div class="container">
+  
+        <div class="footer-top section">
+  
+          <div class="footer-brand">
+            <p class="footer-list-title">About Think Studio</p>
+            <p class="footer-text">
+              Think Studio is a creative design agency specializing in branding, strategy, and visual solutions.
+            </p>
+            <ul class="social-list">
+              <li><a href="https://www.youtube.com/@thinkstudios4" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-youtube" ></ion-icon></a></li>
+              <li><a href="https://www.instagram.com/thinkstudios4/" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram" ></ion-icon></a></li>
+              <li><a href="https://www.facebook.com/people/Think-Studios/61566745828657/" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook" ></ion-icon></a></li>
+              <li><a href="https://www.linkedin.com/company/think-studios-and-technologies-pvt-ltd/posts/?feedView=all" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-Linkedin"></ion-icon></a></li>
+            </ul>
+          </div>
+  
+          <ul class="footer-list">
+            <li><p class="footer-list-title">Useful Links</p></li>
+            <li><a href="#contact-form-section" class="footer-link">Contact us</a></li>
+            <li><a href="./terms_service.html" class="footer-link">Terms & Services</a></li>
+          </ul>
+  
+          <ul class="footer-list">
+            <li><p class="footer-list-title">Community</p></li>
+            <!-- <li><a href="#contact-form-section" class="footer-link">Help Center</a></li> -->
+            <li><a href="./blogs/blogslist.html" class="footer-link">Blog</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2024 Think Studio. All Rights Reserved.</p>
+          
+        </div>
+  
+      </div>
+    </footer>
+  </div>
+  
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+
+
+<!-- Bot Logo -->
+<div class="bot-logo" onclick="toggleBot()">
+  <img src="./assets/images/Chatbot Chat Message.jpg" alt="Bot Logo" />
+</div>
+
+<!-- Pop-up Message -->
+<div id="botPopup" class="bot-popup-message">
+  <span id="popupText"></span>
+  <span class="close-popup" onclick="closePopup()">✖</span>
+</div>
+
+<!-- Message Bar -->
+<div class="bot-container hidden" id="botContainer">
+  <iframe src="https://bots.easy-peasy.ai/bot/13f6ac4b-ed6a-4139-a21d-395665ff0b7b?_gl=1*gik3io*_gcl_au*NzU3Mjg4NDY3LjE3MjgwNjIxODM."
+          title="Think Studio Bot" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+<!-- Back to Top Button -->
+<a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+  <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <!-- cursor property -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"> </script>
+
+</body>
+
+</html>

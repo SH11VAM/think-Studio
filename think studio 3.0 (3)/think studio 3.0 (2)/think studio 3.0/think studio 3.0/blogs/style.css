@@ -1,0 +1,540 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  padding: 8px;
+  background: rgba(76, 200, 224, 0.8);
+  border-radius: 8px;
+  margin: 0;
+  font-size: 64px;
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inputs */
+
+input,
+textarea {
+  height: 32px;
+  padding: 0 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  border: none;
+  box-shadow: inset 8px 3px 18px -4px rgba(0, 0, 0, 0.4);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Banner */
+
+#banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2) url("img/3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+#banner h3 {
+  background: black;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 24px;
+}
+
+/* Search Box */
+
+#searchbox {
+  position: fixed;
+  right: 0;
+  top: 24px;
+  width: 500px;
+  pointer-events: none;
+  z-index: 50;
+  transition: 0.4s;
+}
+
+#searchbox input {
+  height: 48px;
+  width: 100%;
+}
+
+/* Navigation */
+
+nav {
+  height: 72px;
+  background: #1b41d8;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0 32px;
+  color: #eee;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: rgb(33, 188, 232);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.active {
+  color: #eeea78;
+}
+
+#logo-img {
+  display: flex;
+  height: 100%;
+  background: #1b41d8;
+  padding: 0 32px;
+  align-items: center;
+  color: white;
+  transition: 0.4s;
+}
+
+#logo-img img {
+  height: 100px;
+  padding-top: 20px;
+}
+
+#menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding: 0 4px;
+  color: #eee;
+  display: none;
+  align-items: center;
+}
+
+/* Search Icon */
+
+#search-icon {
+  color: white;
+  padding: 0 32px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#search-icon:hover {
+  color: red;
+}
+
+/* Slideout Menu */
+
+#slideout-menu {
+  display: none;
+  background: #2d3436;
+  z-index: 100;
+  position: fixed;
+  transition: 0.4s;
+  margin-top: 72px;
+  width: 100%;
+  text-align: center;
+  opacity:0;
+  pointer-events:none;
+}
+
+#slideout-menu ul {
+  list-style: none;
+  padding: 0 32px;
+}
+
+#slideout-menu ul li {
+  padding: 8px;
+}
+
+#slideout-menu a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+#slideout-menu input {
+  width: 85%;
+  padding: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Sections */
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  transition: all 0.4s;
+  display: inline-block;
+  padding: 4px 32px;
+}
+
+.section-heading:hover {
+  padding: 4px 48px;
+  background: red;
+}
+
+/* Section Source */
+
+#section-source p {
+  padding: 8px;
+  text-align: center;
+}
+
+#section-source a {
+  margin: 8px;
+  text-align: center;
+}
+
+/* Card */
+
+.card-image {
+  transition: 0.4s;
+}
+
+.card-image:hover {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.card .card-description {
+  padding: 0 8px;
+}
+
+.card-meta-blogpost{
+  color:#333;
+  font-size:14px;
+  padding: 16px;
+  font-family:'Roboto Slab', serif;
+}
+
+.card-meta-blogpost a{
+  color:#333;
+}
+
+/* Button Read more */
+
+.btn-readmore {
+  padding: 12px 30px; /* Padding for a better feel */
+  border: none; /* Remove the border for a cleaner look */
+  border-radius: 30px; /* Rounded corners for a softer appearance */
+  font-weight: bold;
+  font-size: 16px; /* Increased font size for readability */
+  cursor: pointer;
+  background:  rgb(47, 187, 238) 100%; /* Gradient background */
+  color: #e5f726; /* Dark text color for contrast */
+  text-transform: uppercase; /* Uppercase text for a stronger impression */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: inline-block; /* Ensures proper inline-block behavior */
+  position: relative; /* For positioning pseudo-elements */
+  margin-bottom: 24px; /* Space below the button */
+  z-index: 1; /* Ensure button is on top of other content */
+  text-decoration: none; /* Remove underline from the text */
+}
+
+.btn-readmore:hover {
+  background: rgb(246, 246, 65); /* Darker background on hover */
+  color: rgb(27, 178, 243); /* Change text color on hover for contrast */
+  transform: translateY(-4px) scale(1.05); /* Slight lift and scale effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  text-decoration: none;
+}
+
+
+
+
+/* Footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+address {
+  font-style: normal;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 60px 20px;
+  }
+
+  .footer-content {
+    text-align: left;
+  }
+}
+
+/* Blog List page */
+
+.page-heading{
+  font-size:32px;
+  font-family:'Roboto Condensed', sans-serif;
+  border-left:3px solid black;
+  border-right:3px solid black;
+  transition: all 0.4s;
+  display:inline-block;
+  padding:4px 32px;
+  margin-top: 120px;
+}
+
+.page-heading:hover{
+  padding:4px 48px;
+  background:rgb(38, 204, 226);
+}
+
+.card-meta{
+  color:#333;
+  font-size: 14px;
+  padding-left:8px;
+  font-family:'Roboto Slab', serif;
+}
+
+.card-meta a{
+  color:#333;
+}
+
+/* Pagination */
+
+.pagination{
+  padding:8px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.pagination a{
+  border-top: 3px solid white;
+  display: inline-block;
+  padding:8px 16px;
+  transition:0.4s;
+}
+
+.pagination a:hover{
+  text-decoration: none;
+  border-top:3px solid black;
+}
+
+/* Single Blogpost */
+
+#post-container{
+  display: flex;
+}
+
+#blogpost{
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  border-left:1px solid #999;
+}
+
+#blogpost .card{
+  width:100%;
+}
+
+#blogpost .card-image:hover{
+  box-shadow: none;
+}
+
+/* Sidebar */
+
+#sidebar{
+  background:#333;
+  flex:1;
+  padding: 8px 16px;
+  color:white;
+  box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
+}
+
+/* Comments section */
+
+#comments-section{
+  border-top: 2px solid #eee;
+  padding:8px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  #menu-icon {
+    display: flex;
+  }
+
+  #slideout-menu {
+    display: block;
+  }
+
+  #searchbox {
+    display: none;
+  }
+
+  #blogpost{
+    width:100%;
+    border-left:0;
+  }
+
+  #sidebar{
+    display: none;
+  }
+}
+
+@media (max-width: 719px) {
+  main {
+    width: 95%;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .card,
+  .card .card-image img {
+    width: 100%;
+    /* height: 50%; */
+  }
+
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  #banner h3 {
+    font-size: 20px;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  #logo-img {
+    padding: 0;
+  }
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 95%;
+  }
+  .card {
+    width: 45%;
+  }
+  .card .card-image img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 85%;
+  }
+}
+
+
+
+
+/* extra */
+.card-image {
+  width: 100%; /* Container takes up full width */
+  max-width: 600px; /* Larger width to make it bigger */
+  margin: 0 auto; /* Centers the image horizontally */
+  overflow: hidden; /* Ensures no overflow from the container */
+  border-radius: 8px; /* Rounded corners */
+  display: flex;
+  justify-content: center; /* Centers image horizontally within container */
+  align-items: center; /* Centers image vertically within container */
+  height: 350px; /* Set a fixed height for the card to maintain consistent size */
+}
+
+.card-image img {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+  height: 100%; /* Set to 100% to cover the height of the container */
+  display: block; /* Prevents gaps under the image */
+  object-fit: contain; /* Maintains aspect ratio without cutting off image */
+  /* You can use 'cover' instead of 'contain' if you prefer filling the container */
+}
+
+
+
+
